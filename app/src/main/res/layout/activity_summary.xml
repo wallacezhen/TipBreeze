@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.walla.tipbreeze.SummaryActivity">
+
+    <TextView
+        android:id="@+id/since"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:text="Since..."/>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_toEndOf="@+id/since"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown" />
+
+    <View
+        android:id="@+id/tipTopGrid"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/since"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tvTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tip"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="140dp"
+        android:layout_below="@+id/since"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay Total"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="230dp"
+        android:layout_below="@+id/since"
+        android:textSize="20sp"/>
+
+    <View
+        android:id="@+id/tipButtonGrid"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/tipTopGrid"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tvAverage"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/tipButtonGrid"
+        android:textSize="18sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="Average:"/>
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_below="@+id/tvAverage"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:text="Total:"/>
+
+
+    <!--<ListView-->
+        <!--android:id="@+id/summaryList"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+    <TextView
+        android:id="@+id/summaryTipAvg"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/tipButtonGrid"
+        android:textSize="18sp"
+        android:text="$0.00"
+        android:textColor="#000"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/summaryTipTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="$0.00"
+        android:layout_below="@id/summaryTipAvg"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="140dp"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/summaryPayTotalAvg"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/tipButtonGrid"
+        android:text="$0.00"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/summaryPayTotalTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0.00"
+        android:textColor="#000"
+        android:layout_below="@id/summaryPayTotalAvg"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="260dp"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/chartTopGrid"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/tvTotal"
+        android:background="@color/colorPrimary" />
+
+    <View
+        android:id="@+id/chartButtonGrid"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/chartTopGrid"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/chartSection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Chart"
+        android:textSize="20dp"
+        android:layout_below="@+id/tvTotal"/>
+
+    <LinearLayout
+        android:id="@+id/chart"
+        android:layout_below="@id/chartSection"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+</RelativeLayout>

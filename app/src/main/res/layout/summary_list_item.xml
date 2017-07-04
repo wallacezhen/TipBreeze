@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/summaryTipAvg"
+        android:layout_width="wrap_content"
+        android:textSize="18sp"
+        android:text="$0.00"
+        android:textColor="#000"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="150dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/summaryTipTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="$0.00"
+        android:layout_below="@id/summaryTipAvg"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="140dp"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/summaryPayTotalAvg"
+        android:layout_width="wrap_content"
+        android:text="$0.00"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="150dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/summaryPayTotalTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0.00"
+        android:textColor="#000"
+        android:layout_below="@id/summaryPayTotalAvg"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="260dp"
+        android:textSize="18sp" />
+
+</RelativeLayout>
